@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 import Link from 'next/link';
+import GenreDropDown from './GenreDropDown';
 
 const Header = () => {
     return (
@@ -19,12 +20,15 @@ const Header = () => {
             </Link>
 
             {/* others */}
-            <div>
+            <div className='text-white'>
                 {/* genre */}
+                <GenreDropDown/>
                 {/* search */}
                 {/* theme */}
+
+
             </div>
-        </div>
+        </div>     
     )
 }
 
