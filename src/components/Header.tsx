@@ -2,6 +2,7 @@ import React from 'react'
 import Image from "next/image";
 import Link from 'next/link';
 import GenreDropDown from './GenreDropDown';
+import Searchinput from './Searchinput';
 
 const Header = () => {
     return (
@@ -20,10 +21,11 @@ const Header = () => {
             </Link>
 
             {/* others */}
-            <div className='text-white'>
+            <div className='text-white flex space-x-2 items-center'>
                 {/* genre */}
                 <GenreDropDown/>
                 {/* search */}
+                <Searchinput />
                 {/* theme */}
 
 
